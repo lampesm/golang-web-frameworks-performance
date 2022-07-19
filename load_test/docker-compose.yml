@@ -2,15 +2,15 @@ version: '3'
 
 services:
   master:
-    image: locustio/locust
+    image: locustio/locust:latest
     ports:
      - "8089:8089"
     volumes:
-      - ./load_test/:/mnt/locust
-    command: -f /mnt/locust/locustfile.py --master -H localhost:8080
+      - ./:/mnt/locust
+    command: -f /mnt/locust/locustfile.py --master -H 127.0.0.1:8080
 
   worker:
-    image: locustio/locust
+    image: locustio/locust:latest
     volumes:
-      - ./load_test/:/mnt/locust
+      - ./:/mnt/locust
     command: -f /mnt/locust/locustfile.py --worker --master-host master
