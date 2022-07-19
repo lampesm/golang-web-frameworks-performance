@@ -1,0 +1,34 @@
+version: '3'
+
+services:
+  chi:
+    image: load-test-chi:1.0.0
+    container_name: load-test-chi-app
+    build: .
+    ports:
+     - "3000:3000"
+    command: "go run src/chi/chi.go"
+    networks:
+      - apinet
+  gin:
+    image: load-test-gin:1.0.0
+    container_name: load-test-gin-app
+    build: .
+    ports:
+     - "8082:8082"
+    command: "go run src/gin/gin.go"
+    networks:
+      - apinet
+  http-net:
+    image: load-test-http_net:1.0.0
+    container_name: load-test-http_net-app
+    build: .
+    ports:
+     - "8081:8081"
+    command: "go run src/http_net/http_net.go"
+    networks:
+      - apinet
+
+networks:
+  apinet:
+    name: api-ntw

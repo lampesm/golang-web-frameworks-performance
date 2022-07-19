@@ -8,4 +8,4 @@ WORKDIR /app
 
 COPY . .
 
-RUN go mod downlaod
+RUN go mod download
