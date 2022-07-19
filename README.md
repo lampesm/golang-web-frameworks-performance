@@ -21,6 +21,7 @@ Performance comparison between [**Gin**](https://github.com/gin-gonic/gin) and [
  - CPU MHz:                         3000.001
  - BogoMIPS:                        6000.00
 
+<div align="center">
 
 |web framework / library| worker|user|rps |rt    |
 |:---:|:-------:|:----:|:----:|:------:|
@@ -36,6 +37,7 @@ Performance comparison between [**Gin**](https://github.com/gin-gonic/gin) and [
 |net/http   |   4   |10  |1800|13 ms |  
 |net/http   |   4   |20  |2100|17 ms |
 
+</div>
 
 ## LICENSE
 [GNU](https://github.com/lampesm/load-test/blob/main/LICENSE)
