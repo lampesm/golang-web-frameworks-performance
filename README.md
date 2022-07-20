@@ -42,7 +42,7 @@ Performance comparison between [**Gin**](https://github.com/gin-gonic/gin), [**C
 |echo   |   4   |20  |2200|17 ms |
 ||
 |fiber   |   4   |1   |650 |3 ms  |
-|fiber   |   4   |10  |2100|10 ms |  
+|fiber   |   4   |10  |2200|10 ms |  
 |fiber   |   4   |20  |2250|18 ms |
 ||
 |net/http   |   4   |1   |630 |2 ms  |
