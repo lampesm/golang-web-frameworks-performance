@@ -28,6 +28,15 @@ services:
     command: "go run src/iris/iris.go"
     networks:
       - apinet
+  echo:
+    image: load-test-echo:1.0.0
+    container_name: load-test-echo-app
+    build: .
+    ports:
+     - "1323:1323"
+    command: "go run src/echo/echo.go"
+    networks:
+      - apinet
   http-net:
     image: load-test-http_net:1.0.0
     container_name: load-test-http_net-app
