@@ -19,6 +19,15 @@ services:
     command: "go run src/gin/gin.go"
     networks:
       - apinet
+  iris:
+    image: load-test-iris:1.0.0
+    container_name: load-test-iris-app
+    build: .
+    ports:
+     - "8083:8083"
+    command: "go run src/iris/iris.go"
+    networks:
+      - apinet
   http-net:
     image: load-test-http_net:1.0.0
     container_name: load-test-http_net-app

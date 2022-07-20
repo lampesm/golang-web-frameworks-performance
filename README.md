@@ -1,6 +1,6 @@
 # load-test
 
-Performance comparison between [**Gin**](https://github.com/gin-gonic/gin) and [**Chi**](https://github.com/go-chi/chi) web frameworks and **net/http** library
+Performance comparison between [**Gin**](https://github.com/gin-gonic/gin), [**Chi**](https://github.com/go-chi/chi) and [**iris**](https://github.com/kataras/iris) web frameworks and **net/http** library
 
 ### Hardware specifications
  - Mem: 7.73G
@@ -28,14 +28,19 @@ Performance comparison between [**Gin**](https://github.com/gin-gonic/gin) and [
 |chi   |   4   |1   |420 |5 ms  |
 |chi   |   4   |10  |770 |30 ms |  
 |chi   |   4   |20  |1100|35 ms |
-||
+|
+|iris|4     |1  | 460   |  4ms |   
+|iris|4     |10 | 1100  |  20ms|   
+|iris|4     |20 | 1200  |  40ms|
+|
 |gin   |   4   |1   |400 |6 ms  |
 |gin   |   4   |10  |740 |30 ms |  
 |gin   |   4   |20  |870 |45 ms |
-||
+|
 |net/http   |   4   |1   |630 |2 ms  |
 |net/http   |   4   |10  |1800|13 ms |  
 |net/http   |   4   |20  |2100|17 ms |
+
 
 </div>
 
