@@ -10,6 +10,15 @@ services:
     command: "go run src/chi/chi.go"
     networks:
       - apinet
+  fiber:
+    image: load-test-fiber:1.0.0
+    container_name: load-test-fiber-app
+    build: .
+    ports:
+     - "3001:3000"
+    command: "go run src/fiber/fiber.go"
+    networks:
+      - apinet
   gin:
     image: load-test-gin:1.0.0
     container_name: load-test-gin-app

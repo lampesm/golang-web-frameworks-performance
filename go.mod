@@ -5,6 +5,7 @@ go 1.18
 require (
 	github.com/gin-gonic/gin v1.8.1
 	github.com/go-chi/chi/v5 v5.0.7
+	github.com/gofiber/fiber/v2 v2.35.0
 	github.com/kataras/iris/v12 v12.2.0-beta3.0.20220719085930-42b729732c41
 	github.com/labstack/echo/v4 v4.7.2
 )
@@ -54,7 +55,9 @@ require (
 	github.com/tdewolff/parse/v2 v2.6.1 // indirect
 	github.com/ugorji/go/codec v1.2.7 // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
+	github.com/valyala/fasthttp v1.38.0 // indirect
 	github.com/valyala/fasttemplate v1.2.1 // indirect
+	github.com/valyala/tcplisten v1.0.0 // indirect
 	github.com/vmihailenco/msgpack/v5 v5.3.5 // indirect
 	github.com/vmihailenco/tagparser/v2 v2.0.0 // indirect
 	github.com/yosssi/ace v0.0.5 // indirect

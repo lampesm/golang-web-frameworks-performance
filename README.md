@@ -1,6 +1,6 @@
 # load-test
 
-Performance comparison between [**Gin**](https://github.com/gin-gonic/gin), [**Chi**](https://github.com/go-chi/chi), [**echo**](https://github.com/labstack/echo) and [**iris**](https://github.com/kataras/iris) web frameworks and **net/http** library
+Performance comparison between [**Gin**](https://github.com/gin-gonic/gin), [**Chi**](https://github.com/go-chi/chi), [**echo**](https://github.com/labstack/echo), [**fiber**](https://github.com/gofiber/fiber) and [**iris**](https://github.com/kataras/iris) web frameworks and **net/http** library
 
 ### Hardware specifications
  - Mem: 7.73G
@@ -41,10 +41,16 @@ Performance comparison between [**Gin**](https://github.com/gin-gonic/gin), [**C
 |echo   |   4   |10  |2100|12 ms |  
 |echo   |   4   |20  |2200|17 ms |
 ||
+|fiber   |   4   |1   |650 |3 ms  |
+|fiber   |   4   |10  |2100|10 ms |  
+|fiber   |   4   |20  |2250|18 ms |
+||
 |net/http   |   4   |1   |630 |2 ms  |
 |net/http   |   4   |10  |1800|13 ms |  
 |net/http   |   4   |20  |2100|17 ms |
 
+650 3ms
+2100 10ms
 
 </div>
 
