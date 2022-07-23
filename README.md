@@ -49,9 +49,6 @@ Performance comparison between [**Gin**](https://github.com/gin-gonic/gin), [**C
 |net/http   |   4   |10  |1800|13 ms |  
 |net/http   |   4   |20  |2100|17 ms |
 
-650 3ms
-2100 10ms
-
 </div>
 
 ## LICENSE
