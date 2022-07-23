@@ -51,5 +51,17 @@ Performance comparison between [**Gin**](https://github.com/gin-gonic/gin), [**C
 
 </div>
 
+and the result of the load test taken on [Fast API](https://github.com/tiangolo/fastapi). In the same situation as Go web frameworks. The API was the GET method and returned only a simple Json
+
+<div align="center">
+
+|web framework| worker|user|rps |rt    |
+|:---:|:-------:|:----:|:----:|:------:|
+|fastapi   |   4   |1   |310 |7 ms  |
+|fastapi   |   4   |10  |480 |33 ms |  
+|fastapi   |   4   |20  |505|60 ms |
+
+</div>
+
 ## LICENSE
 [GNU](https://github.com/lampesm/load-test/blob/main/LICENSE)
