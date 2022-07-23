@@ -2,6 +2,8 @@
 
 Performance comparison between [**Gin**](https://github.com/gin-gonic/gin), [**Chi**](https://github.com/go-chi/chi), [**echo**](https://github.com/labstack/echo), [**fiber**](https://github.com/gofiber/fiber) and [**iris**](https://github.com/kataras/iris) web frameworks and **net/http** library
 
+[go-web-framework-stars](https://github.com/mingrammer/go-web-framework-stars)
+
 ### Hardware specifications
  - Mem: 7.73G
  - Swap: 2.00G
