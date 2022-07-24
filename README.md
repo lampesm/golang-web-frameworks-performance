@@ -25,31 +25,27 @@ Performance comparison between [**Gin**](https://github.com/gin-gonic/gin), [**C
 
 <div align="center">
 
-|web framework / library| worker|user|rps |rt    |
-|:---:|:-------:|:----:|:----:|:------:|
-|chi   |   4   |1   |420 |5 ms  |
-|chi   |   4   |10  |770 |30 ms |  
-|chi   |   4   |20  |1100|35 ms |
-||
-|iris  |4     |1  | 460   |  4ms |   
-|iris  |4     |10 | 1100  |  20ms|   
-|iris  |4     |20 | 1200  |  40ms|
-||
-|gin   |   4   |1   |400 |6 ms  |
-|gin   |   4   |10  |740 |30 ms |  
-|gin   |   4   |20  |870 |45 ms |
-||
-|echo   |   4   |1   |660 |2 ms  |
-|echo   |   4   |10  |2100|12 ms |  
-|echo   |   4   |20  |2200|17 ms |
-||
-|fiber   |   4   |1   |650 |3 ms  |
-|fiber   |   4   |10  |2200|10 ms |  
-|fiber   |   4   |20  |2250|18 ms |
-||
-|net/http   |   4   |1   |630 |2 ms  |
-|net/http   |   4   |10  |1800|13 ms |  
-|net/http   |   4   |20  |2100|17 ms |
+<style>
+table {
+    border-collapse: collapse;
+}
+table, th, td {
+   border: 1px solid black;
+}
+blockquote {
+    border-left: solid blue;
+    padding-left: 10px;
+}
+</style>
+
+|web framework / library| worker|user|rps |rt ||user|rps |rt ||user|rps |rt |
+|:---:|:-----:|:----:|:----:|:-:|:----:|:----:|:----:|:----:|:-:|:----:|:----:|:----:|
+|chi   |   4   |1   |420 |5 ms  ||10   |770 |30 ms  ||20   |1100 |35 ms  |
+|iris  |4     |1  | 460   |  4ms ||10 | 1100  |  20ms||20 | 1200  |  40ms| 
+|gin   |   4   |1   |400 |6 ms  ||10  |740 |30 ms ||20  |870 |45 ms |
+|echo   |   4   |1   |660 |2 ms  ||10  |2100|12 ms ||20  |2200|17 ms |
+|fiber   |   4   |1   |650 |3 ms  ||10  |2200|10 ms ||20  |2250|18 ms |  
+|net/http   |   4   |1   |630 |2 ms  ||10  |1800|13 ms ||20  |2100|17 ms |
 
 </div>
 
@@ -57,11 +53,9 @@ and the result of the load test taken on [Fast API](https://github.com/tiangolo/
 
 <div align="center">
 
-|web framework| worker|user|rps |rt    |
-|:---:|:-------:|:----:|:----:|:------:|
-|fastapi   |   4   |1   |310 |7 ms  |
-|fastapi   |   4   |10  |480 |33 ms |  
-|fastapi   |   4   |20  |505|60 ms |
+|web framework / library| worker|user|rps |rt ||user|rps |rt ||user|rps |rt |
+|:---:|:-----:|:----:|:----:|:-:|:----:|:----:|:----:|:----:|:-:|:----:|:----:|:----:|
+|fastapi   |   4   |1   |310 |7 ms  ||10  |480 |33 ms ||20  |505|60 ms | 
 
 </div>
 
