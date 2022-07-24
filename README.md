@@ -25,19 +25,6 @@ Performance comparison between [**Gin**](https://github.com/gin-gonic/gin), [**C
 
 <div align="center">
 
-<style>
-table {
-    border-collapse: collapse;
-}
-table, th, td {
-   border: 1px solid black;
-}
-blockquote {
-    border-left: solid blue;
-    padding-left: 10px;
-}
-</style>
-
 |web framework / library| worker|user|rps |rt ||user|rps |rt ||user|rps |rt |
 |:---:|:-----:|:----:|:----:|:-:|:----:|:----:|:----:|:----:|:-:|:----:|:----:|:----:|
 |chi   |   4   |1   |420 |5 ms  ||10   |770 |30 ms  ||20   |1100 |35 ms  |
@@ -53,7 +40,7 @@ and the result of the load test taken on [Fast API](https://github.com/tiangolo/
 
 <div align="center">
 
-|web framework / library| worker|user|rps |rt ||user|rps |rt ||user|rps |rt |
+|web framework| worker|user|rps |rt ||user|rps |rt ||user|rps |rt |
 |:---:|:-----:|:----:|:----:|:-:|:----:|:----:|:----:|:----:|:-:|:----:|:----:|:----:|
 |fastapi   |   4   |1   |310 |7 ms  ||10  |480 |33 ms ||20  |505|60 ms | 
 
